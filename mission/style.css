@@ -1,8 +1,52 @@
-h2 {
-    color: #006EB6;
+
+.title {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    line-height: normal;
+    margin-top: 60px;
+    text-align: center;
+    
+
+    
 }
 
-*{
-    justify-content: center;
-    content: center;
+h2 {
+    color: #006EB6;
+    font-size: medium;
+    border-bottom: solid 0.1px gray;
+    font-weight: 600;
+
+}
+
+
+li {
+    padding: 20px;
+}
+
+.content {
+    max-width: 600px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 20px;
+    margin: 0 auto;
+    border: solid 0.1px gray;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+main {
+    font-weight: 400;
+    justify-self: left;
+}
+
+
+.logo {
+    
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 150px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
 }
