@@ -50,3 +50,15 @@ main {
     margin: 0 auto;
    
 }
+
+
+.dark {
+    background-color: #333;
+    color:white;
+    
+}
+
+.dark h2{
+    /* color: #4F9ACF; */
+    color: #A0D4ED;
+}
