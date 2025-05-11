@@ -1,0 +1,63 @@
+img {
+	max-width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+ body {
+    font-family: var(Arial);
+    font-size: 1.2em;
+  }
+
+
+  a:link, a:visited {
+    color: var(#f45b69);
+  }
+
+  @media (min-width: 700px) {
+    .image-container { /* Assuming you have a container for your images */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+      gap: 10px; /* Adjust the gap between images as needed */
+
+      display: none;
+    }
+  
+    .image-container img {
+      width: 100%; /* Make sure images scale within their grid cell */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+
+  header h1 {
+    margin: 0 auto;
+  }
+
+  header {
+    background: #52489c;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--secondary-font);
+  }
