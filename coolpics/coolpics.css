@@ -21,6 +21,9 @@ img {
  body {
     font-family: var(Arial);
     font-size: 1.2em;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--secondary-font);
   }
 
 
@@ -56,8 +59,18 @@ img {
     padding-top: 20px;
   }
 
-  body {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,1fr);
+
+  }
+
+  footer {
+    color: white;
     margin: 0 auto;
-    text-align: center;
-    font-family: var(--secondary-font);
+    background:  var(--primary-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+
   }
