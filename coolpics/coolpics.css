@@ -5,9 +5,13 @@ img {
   margin: 20px;
   padding: 20px;
   object-fit: cover;
-  border: #ebebeb
-    
+  border: solid 7px #ebebeb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
 
+}
+
+h1 {
+  font-weight: bold;
 }
 
 
@@ -33,6 +37,14 @@ img {
 
   a:link, a:visited {
     color: var(#f45b69);
+  }
+
+  button 
+  {
+    background: #52489c;
+    color: #ebebeb;
+    border: none;
+    font-family: var(--primary-font);
   }
 
   @media (min-width: 700px) {
@@ -66,7 +78,7 @@ img {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
 
   }
 

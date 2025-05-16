@@ -1,0 +1,1 @@
+https://quadeatschool.github.io/Dynamic-web/coolpics/index.html
