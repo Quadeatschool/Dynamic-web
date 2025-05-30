@@ -51,3 +51,22 @@ badnum = 21;
 let baddy = numbers.indexOf(badnum);
 //Quade Hafen
 
+// practise   
+// function MyFunction()
+// {
+//   stuff
+// }
+
+// expression
+// const MyFunction = function ()
+// {
+// stuff
+// };
+
+// shift + down/shift + up
+
+// // Lambda
+// const Myfunction = () => {stuff};
+
+// --------------------------------------------------------------
+
