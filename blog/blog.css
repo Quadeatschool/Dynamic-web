@@ -4,13 +4,39 @@
 
 :root{
     --color-primary: #171219;
-    --color-primary: #EDF060;
-    --color-primary:#310D20;
+    --color-2nd: #EDF060;
+    --color-3rd:#310D20;
 
 
 }
 
-header {
-    justify-content: center;
-    background: #310D20;
+.info{
+    font-weight: bold;
+    font-family: Open-Sans, Ariel, sans-serif;
+}
+
+header, div{
+    display: block;
+    background: var(--color-2nd);
+    unicode-bidi: isolate;
+}
+
+#navbar{
+    text-align: center;
+    color: var(--color-primary);
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    border-top: solid 1px var(--color-primary);
+    border-bottom: solid 1px var(--color-primary);
+    justify-content: end;
+    justify-items: end;
+    margin: 0 auto;
+    list-style: none;
+    padding: 10px;
+}
+
+.book{
+    margin: 10px;
+    color: var(--color-3rd);
+    font-family: Open-Sans, Ariel, sans-serif;
 }
