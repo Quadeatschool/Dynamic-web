@@ -35,8 +35,49 @@ header, div{
     padding: 10px;
 }
 
+section{
+    unicode-bidi: isolate;
+}
+
 .book{
     margin: 10px;
     color: var(--color-3rd);
     font-family: Open-Sans, Ariel, sans-serif;
 }
+
+.book, p{
+    color:#171219;
+}
+
+filter{
+    border: solid 0 var(--color-primary);
+}
+
+footer{
+    background: var(--color-2nd);
+    margin: 0 auto;
+    padding: 25px;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* what this do? */
+    unicode-bidi: isolate;
+}
+
+.grid {
+    margin: 30px;
+}
+
+@media screen and (mid-width: 700px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+}
+
