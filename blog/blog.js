@@ -9,7 +9,7 @@ const articles = [
 		imgAlt: 'Book cover for Septimus Heap 1',
 		ages: '10-14',
 		genre: 'Fantasy',
-		stars: '****'
+		stars: '⭐⭐⭐⭐'
 	},
 	{
 		id: 2,
@@ -24,14 +24,37 @@ const articles = [
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
 	}
-]
 
-body {
-    --tfc-dark-mode-text-primary: #e4e4e7;
-    --tfc-dark-mode-text-secondary: #71717a;
-    --tfc-dark-mode-bg-primary
-#27272a
-: #27272a;
-    --tfc-dark-mode-bg-primary-2: #3f3f46;
-    --tfc-dark-mode-bg-secondary: #52525b;
-    --tfc-sidebar-width: 288px;
+]
+const contained = document.querySelector('.grid');
+
+function CreateBookReview(articleArray)
+{
+	articleArray.forEach(article => {
+		const articleElement = document.createElement('article');
+		articleElement.classList.add('book-review');
+		articleElement.innerHTML = `<h2>${article.title}</h2>`
+		+ `<p class="date">${article.date}</p>`
+		+ `<img src="${article.imgSrc}" alt="${article.imgAlt}">`
+		+ `<p class="description">${article.description}</p>`
+		+ `<p class="ages">Ages: ${article.ages}</p>`
+		+ `<p class="genre">Genre: ${article.genre}</p>`
+		+ `<p class="stars">Rating: ${article.stars}</p>`;
+
+		contained.appendChild(articleElement);
+
+		
+
+	})
+}
+
+CreateBookReview(articles);
+
+// body {
+//     --tfc-dark-mode-text-primary: #e4e4e7;
+//     --tfc-dark-mode-text-secondary: #71717a;
+//     --tfc-dark-mode-bg-primary: #27272a;
+//     --tfc-dark-mode-bg-primary-2: #3f3f46;
+//     --tfc-dark-mode-bg-secondary: #52525b;
+//     --tfc-sidebar-width: 288px;
+// }
