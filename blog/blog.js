@@ -26,13 +26,14 @@ const articles = [
 	}
 
 ]
-const contained = document.querySelector('.grid');
+const main = document.querySelector('main');
 
 function CreateBookReview(articleArray)
 {
-	articleArray.forEach(article => {
-		const articleElement = document.createElement('article');
-		articleElement.classList.add('book-review');
+	articleArray.forEach(item => {
+		const articleElement = document.createElement('section');
+		articleElement.classList.add('grid');
+
 		articleElement.innerHTML = `<h2>${article.title}</h2>`
 		+ `<p class="date">${article.date}</p>`
 		+ `<img src="${article.imgSrc}" alt="${article.imgAlt}">`
@@ -41,9 +42,24 @@ function CreateBookReview(articleArray)
 		+ `<p class="genre">Genre: ${article.genre}</p>`
 		+ `<p class="stars">Rating: ${article.stars}</p>`;
 
-		contained.appendChild(articleElement);
+		`<div class="info>
+		<p class="date">${item.date}</p>
+		<p>${item.ages}</p>
+		<p>${item.genre}</p>
+		<p>${item.stars}</p>
+		</div>
+		<div class="book">
+			<h2>${item.title}</h2>
+			<img src="${item.imSrc}" alt="${item.imgAlt}">
+			<p>${item.description} <a href="#>Read More...</a></p>
+		</div>
+			<div class="filters">
+			<p>Filters will go here</p>
+		</div>
+		`;
 
-		
+	
+
 
 	})
 }
