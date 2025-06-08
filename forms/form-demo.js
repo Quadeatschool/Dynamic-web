@@ -51,10 +51,6 @@ function togglePaymentDetails(e) {
         theForm.paypalUsername.required = true;
     }
 }
-
-
-
-
 // helper function to display our errors.
 function showErrors(errors) {
   const errorEl = document.querySelector(".errors");
@@ -70,3 +66,4 @@ function showErrors(errors) {
 document
 .querySelector("#checkoutForm")
 .addEventListener("submit", validateForm);
+//Quade Hafen
