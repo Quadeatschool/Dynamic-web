@@ -230,7 +230,7 @@ select:valid {
 }
 
 /* Responsive Design */
-@media (man-width: 700px) {
+@media (min-width: 700px) {
   .container {
     max-width: 100%;
     padding: 0 10px;
