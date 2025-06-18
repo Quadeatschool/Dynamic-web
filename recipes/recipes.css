@@ -1,0 +1,13 @@
+
+
+.socialMediaFlex
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMediaTags
+{
+    width: 20px;
+    height: 20px;
+}
