@@ -1,49 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="recipes.css">
-    <script src="recipes.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>recipes</title>
-</head>
-<body>
-    <header>
+  <head>
+    <meta property="og:title" content="Page Title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Page Description" />
+    <meta property="og:image" content="URL to an image" />
+    <meta property="og:url" content="URL of the page" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-        <section class="headerFlex"> 
-        <div class="logo"><img class="logo" src="images\recipe-book.png" alt="logo"></div>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="recipes.css" />
+    <script src="recipes.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipes</title>
+  </head>
+  <body>
+    <header>
+      <section class="headerFlex">
+        <section class="logoTitle">
+        <div class="logo">
+          <img class="logo" src="images\recipe-book.png" alt="logo" />
+        </div>
         <div class="title"><h1>RECIPEBOOK</h1></div>
         </section>
-        
+        <section class="searchBarContiner">
+      <form class="search-bar" action="/search" method="get">
+        <input type="text" name="q" placeholder="Search..." />
+        <button type="submit">🔍</button>
+      </form>
+      </section>
+      </section>
     </header>
-<section class="foodItem">
-    <div>
-        <li>
-            <ul>
+    <main>
+      <section class="foodItem">
+        <div class="foodImage">
+          <img
+            class="foodImage"
+            src="images\chocolate-chip-cookies.jpg"
+            alt="chocolate-chip-cookies"
+          />
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">dfgnmkuyfvnmh</a></li>
+            <li><a href="#">dfgnmkuyfvnmh</a></li>
+          </ul>
+        </div>
 
-            </ul>
-            <ul>
+        <div><h3 class="title">cookis</h3></div>
+        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
 
-            </ul>
-        </li>
+        <div>
+          <a
+            >The aria-label will be read by the screen reader, and the
+            aria-hidden="true" on the stars will tell the screen reader to
+            ignore those and they will not be read.</a
+          >
+        </div>
+      </section>
+    </main>
+  
+
+  <footer>
+    <div class="link">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons"
+        >Recipe icons created by Freepik - Flaticon</a
+      >
     </div>
-    <div class="rating"><a></a></div>
-    <div class="foodImage"><img class="foodImage" src="images\chocolate-chip-cookies.jpg"></div>
-    <div><h3 class="title"></h3></div>
-</section>
 
-    
-
-</body>
-
-<footer>
-    
-    <section class="socialMediaFlex">
-        <div class="socialMediaTags"><img src="images\instagram_icon.svg" alt="instagram_icon"></div>
-        <div class="socialMediaTags"><img src="images\youtube_icon.svg" alt="youtube_icon"></div>
-        <div class="socialMediaTags"><img src="images\pinterest_icon.svg" alt="pinterest_icon"></div>
-    </section>
-    <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
-
-</footer>
+    <div class="social">
+      <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+      <a href="#"
+        ><img
+          class="socialImages"
+          src="images/instagram_icon.svg"
+          alt="instagram icon"
+      /></a>
+      <a href="#"
+        ><img
+          class="socialImages"
+          src="images/youtube_icon.svg"
+          alt="youtube icon"
+      /></a>
+      <a href="#"
+        ><img
+          class="socialImages"
+          src="images/pinterest_icon.svg"
+          alt="pinterest icon"
+      /></a>
+    </div>
+  </footer>
+  </body>
 </html>
