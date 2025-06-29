@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta property="og:title" content="Page Title" />
+    <!-- Social sharing (Open Graph & Twitter) -->
+    <meta property="og:title" content="RecipeBook - Easy & Delicious Recipes" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Page Description" />
-    <meta property="og:image" content="URL to an image" />
-    <meta property="og:url" content="URL of the page" />
+    <meta property="og:description" content="Discover easy, delicious recipes for every occasion! Search, browse, and enjoy meals, desserts, and more on RecipeBook." />
+    <meta property="og:image" content="images/recipe-book.png" />
+    <meta property="og:url" content="https://yourdomain.com/recipes/inde.html" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RecipeBook - Easy & Delicious Recipes" />
+    <meta name="twitter:description" content="Find your next favorite meal or dessert with RecipeBook. Browse, search, and enjoy a variety of recipes!" />
+    <meta name="twitter:image" content="images/recipe-book.png" />
+
+    <!-- General SEO -->
+    <meta name="description" content="RecipeBook: A collection of easy, delicious recipes for meals, desserts, and more. Search and discover your next favorite dish!" />
+    <meta name="keywords" content="recipes, cooking, food, meals, desserts, easy recipes, quick recipes, RecipeBook" />
+    <meta name="author" content="Quade Hafen, Shane Thompson, Provo High Culinary Students, Ester Kocht, AllRecipes" />
 
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="recipes.css" />
     <script src="recipes.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>recipes</title>
+    <title>RecipeBook - Easy & Delicious Recipes</title>
   </head>
   <body>
     <header>
       <section class="headerFlex">
         <section class="logoTitle">
-        <div class="logo">
-          <img class="logo" src="images\recipe-book.png" alt="logo" />
-        </div>
+          <img class="logo" src="images/recipe-book.png" alt="logo" />
         <div class="title"><h1>RECIPEBOOK</h1></div>
         </section>
-        <section class="searchBarContiner">
+        <section class="searchBarContainer">
       <form class="search-bar" action="/search" method="get">
         <input type="text" name="q" placeholder="Search..." />
-        <button type="submit">🔍</button>
+        <button type="submit" aria-label="Search">🔍</button>
       </form>
       </section>
       </section>
     </header>
     <main>
-      <section class="foodItem">
-        <div class="foodImage">
-          <img
-            class="foodImage"
-            src="images\chocolate-chip-cookies.jpg"
-            alt="chocolate-chip-cookies"
-          />
-        </div>
-        <div>
-          <ul>
-            <li><a href="#">dfgnmkuyfvnmh</a></li>
-            <li><a href="#">dfgnmkuyfvnmh</a></li>
-          </ul>
-        </div>
-
-        <div><h3 class="title">cookis</h3></div>
-        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
-
-        <div>
-          <a
-            >The aria-label will be read by the screen reader, and the
-            aria-hidden="true" on the stars will tell the screen reader to
-            ignore those and they will not be read.</a
-          >
-        </div>
-      </section>
+      <div id="recipe-container"></div>
     </main>
   
 
