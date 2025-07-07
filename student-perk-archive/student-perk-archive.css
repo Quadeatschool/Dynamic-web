@@ -1,0 +1,45 @@
+:root {
+  /* Custom Color Palette */
+  --primary-color: #A29F15;
+  --secondary-color: #F3B61F;
+  --accent1-color: #BBD8B3;
+  --accent2-color: #510D0A;
+  --dark-color: #191102;
+
+  /* Fonts */
+  --heading-font: "Anton", sans-serif;
+  --paragraph-font: "Open Sans", sans-serif;
+
+  /* Usage Colors */
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: var(--accent1-color);
+  --paragraph-color-on-white: var(--dark-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--accent1-color);
+  --nav-link-color: var(--accent2-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+
+}
+
+header{
+
+}
+
+/* ------------------------------- */
+
+main{
+
+}
+
+/* ----------------------------------- */
+
+footer{
+    
+}
+
+@media screen and (min-width: 550px)
+{
+    
+}
