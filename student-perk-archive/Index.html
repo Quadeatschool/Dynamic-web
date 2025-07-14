@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Perk Archive</title>
+  <link rel="stylesheet" href="student-perk-archive.css">
 </head>
 <body>
-
-<header></header>
-<main><hero></hero></main>
-<footer></footer>
-    
+  <header>
+    <h1>Student Perk Archive</h1>
+    <button id="showFormBtn">Add New Perk</button>
+  </header>
+  <main>
+    <input type="text" id="searchBar" placeholder="Search perks...">
+    <div id="categoryFilter">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="Tech">Tech</button>
+      <button class="category-btn" data-category="Food">Food</button>
+      <button class="category-btn" data-category="Subscriptions">Subscriptions</button>
+      <button class="category-btn" data-category="Retail">Retail</button>
+      <button class="category-btn" data-category="Other">Other</button>
+    </div>
+    <section id="perksContainer"></section>
+    <form id="perkForm" style="display:none;">
+      <h2>Add a New Perk</h2>
+      <label>Title: <input type="text" id="perkTitle" required></label><br>
+      <label>Description: <textarea id="perkDesc" required></textarea></label><br>
+      <label>Link: <input type="url" id="perkLink"></label><br>
+      <button type="submit">Add Perk</button>
+      <button type="button" id="cancelFormBtn">Cancel</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
