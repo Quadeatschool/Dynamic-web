@@ -37,12 +37,6 @@ const perks = [
 ];
 
 const perksContainer = document.getElementById('perksContainer');
-const showFormBtn = document.getElementById('showFormBtn');
-const perkForm = document.getElementById('perkForm');
-const cancelFormBtn = document.getElementById('cancelFormBtn');
-const perkTitle = document.getElementById('perkTitle');
-const perkDesc = document.getElementById('perkDesc');
-const perkLink = document.getElementById('perkLink');
 
 function renderPerks() {
   perksContainer.innerHTML = '';
@@ -57,30 +51,5 @@ function renderPerks() {
     perksContainer.appendChild(card);
   });
 }
-
-showFormBtn.addEventListener('click', () => {
-  perkForm.style.display = 'block';
-  showFormBtn.style.display = 'none';
-});
-
-cancelFormBtn.addEventListener('click', () => {
-  perkForm.style.display = 'none';
-  showFormBtn.style.display = 'inline-block';
-  perkForm.reset();
-});
-
-perkForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const newPerk = {
-    title: perkTitle.value,
-    description: perkDesc.value,
-    link: perkLink.value
-  };
-  perks.push(newPerk);
-  renderPerks();
-  perkForm.style.display = 'none';
-  showFormBtn.style.display = 'inline-block';
-  perkForm.reset();
-});
 
 renderPerks(); 

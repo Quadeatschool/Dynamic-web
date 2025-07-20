@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="script.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Perk Archive</title>
@@ -8,8 +9,8 @@
 </head>
 <body>
   <header>
+    <img class="logo" src="images/openart-image_ZQQYoe6o_1751859969059_raw.jpg" alt="Student Perk Archive Logo" style="max-width:90px; margin-bottom:0.5rem;">
     <h1>Student Perk Archive</h1>
-    <button id="showFormBtn">Add New Perk</button>
   </header>
   <main>
     <input type="text" id="searchBar" placeholder="Search perks...">
@@ -22,15 +23,16 @@
       <button class="category-btn" data-category="Other">Other</button>
     </div>
     <section id="perksContainer"></section>
-    <form id="perkForm" style="display:none;">
-      <h2>Add a New Perk</h2>
-      <label>Title: <input type="text" id="perkTitle" required></label><br>
-      <label>Description: <textarea id="perkDesc" required></textarea></label><br>
-      <label>Link: <input type="url" id="perkLink"></label><br>
-      <button type="submit">Add Perk</button>
-      <button type="button" id="cancelFormBtn">Cancel</button>
-    </form>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="add-perk.html" id="addPerkPageBtn" class="category-btn" style="font-size:1.1rem;">Add a New Perk</a>
+    </div>
   </main>
-  <script src="script.js"></script>
+  
 </body>
+<footer>
+  <p>
+    <a href="https://github.com/yourusername/your-repo" target="_blank">GitHub</a>
+    <a href="www.linkedin.com/in/quade-hafen-8689932a3" target="_blank">LinkedIn</a>
+  </p>
+</footer>
 </html>

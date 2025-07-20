@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  --primary-color: #A29F15;
+  --primary-color: #4ba627;
   --secondary-color: #F3B61F;
   --accent1-color: #BBD8B3;
   --accent2-color: #510D0A;
@@ -32,6 +32,12 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
   letter-spacing: 1px;
+}
+
+.logo {
+  max-width: 90px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
 }
 #showFormBtn {
   background: var(--secondary-color);
@@ -160,6 +166,16 @@ main {
 /* ----------------------------------- */
 
 footer{
+  height: 50px;
+  width: 100%;
+  font-family: var(--paragraph-font);
+  background: var(--primary-color);
+  color: var( --accent2-color);
+  padding: 1.5rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
     
 }
 

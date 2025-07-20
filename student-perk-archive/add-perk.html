@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Perk | Student Perk Archive</title>
+  <link rel="stylesheet" href="student-perk-archive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/openart-image_ZQQYoe6o_1751859969059_raw.jpg" alt="Student Perk Archive Logo" style="max-width:90px; margin-bottom:0.5rem;">
+    <h1>Add a New Perk</h1>
+    <a href="index.html" class="category-btn" style="margin-top:1rem;">&#8592; Back to Perks</a>
+  </header>
+  <main>
+    <form id="perkForm">
+      <label>Title: <input type="text" id="perkTitle" required></label><br>
+      <label>Description: <textarea id="perkDesc" required></textarea></label><br>
+      <label>Link: <input type="url" id="perkLink"></label><br>
+      <button type="submit">Add Perk</button>
+    </form>
+    <div id="successMsg" style="display:none; color:var(--primary-color); font-family:var(--heading-font); margin-top:2rem; font-size:1.2rem; text-align:center;">Perk submitted! (This demo does not save perks between pages.)</div>
+  </main>
+  <script>
+    const perkForm = document.getElementById('perkForm');
+    const successMsg = document.getElementById('successMsg');
+    perkForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      perkForm.style.display = 'none';
+      successMsg.style.display = 'block';
+    });
+  </script>
+</body>
+<footer>
+  <p>
+    <a href="https://github.com/yourusername/your-repo" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+</html> 
