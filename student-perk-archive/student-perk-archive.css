@@ -128,9 +128,10 @@ main {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  margin: 2rem auto 0 auto;
   max-width: 400px;
+  box-sizing: border-box;
 }
 #perkForm label {
   display: block;
@@ -146,6 +147,8 @@ main {
   border: 1.5px solid var(--primary-color);
   border-radius: 4px;
   font-family: var(--paragraph-font);
+  box-sizing: border-box;
+  resize: vertical;
 }
 #perkForm button {
   margin-right: 0.5rem;
@@ -165,18 +168,64 @@ main {
 
 /* ----------------------------------- */
 
-footer{
-  height: 50px;
-  width: 100%;
-  font-family: var(--paragraph-font);
+footer {
   background: var(--primary-color);
-  color: var( --accent2-color);
-  padding: 1.5rem 2rem 1rem 2rem;
+  padding: 1rem 0 0.5rem 0;
+  margin-top: 2rem;
+}
+.footer-flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-    
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-name {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  font-size: 1.1rem;
+}
+.footer-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.footer-icon {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 0 8px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+.footer-icon.github {
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px;
+  min-height: 64px;
+}
+.footer-icon.linkedin {
+  margin-top: 16px;
+}
+.footer-icon:hover {
+  transform: scale(1.15);
+}
+@media (max-width: 600px) {
+  .footer-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .footer-links {
+    justify-content: center;
+  }
+  .footer-name {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 550px)

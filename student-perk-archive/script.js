@@ -37,10 +37,11 @@ const perks = [
 ];
 
 const perksContainer = document.getElementById('perksContainer');
+const searchBar = document.getElementById('searchBar');
 
-function renderPerks() {
+function renderPerks(perksToShow) {
   perksContainer.innerHTML = '';
-  perks.forEach(perk => {
+  perksToShow.forEach(perk => {
     const card = document.createElement('div');
     card.className = 'perk-card';
     card.innerHTML = `
@@ -52,4 +53,27 @@ function renderPerks() {
   });
 }
 
-renderPerks(); 
+// Fisher-Yates shuffle
+function shuffleArray(array) {
+  const arr = array.slice();
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Shuffle perks for initial display
+const shuffledPerks = shuffleArray(perks);
+renderPerks(shuffledPerks);
+
+// Search functionality
+searchBar.addEventListener('input', function() {
+  const query = searchBar.value.trim().toLowerCase();
+  // filter is used :)
+  const filtered = perks.filter(perk =>
+    perk.title.toLowerCase().includes(query) ||
+    perk.description.toLowerCase().includes(query)
+  );
+  renderPerks(filtered);
+}); 
